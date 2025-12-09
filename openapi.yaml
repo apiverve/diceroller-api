@@ -1,0 +1,90 @@
+openapi: 3.0.4
+info:
+  title: Dice Roller
+  description: Dice Roller is a tool for rolling dice using standard RPG notation (XdY format). It supports multiple dice, various die sizes, modifiers, and provides statistics including min, max, average, and theoretical values for gaming and simulations.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/diceroller:
+    get:
+      summary: Roll Dice
+      description: Dice Roller is a tool for rolling dice using standard RPG notation (XdY format). It supports multiple dice, various die sizes, modifiers, and provides statistics including min, max, average, and theoretical values for gaming and simulations.
+      operationId: diceroller
+      parameters:
+      - name: dice
+        default: 1d6
+        in: query
+        schema:
+          type: string
+        required: false
+        description: 'Dice notation in XdY format (e.g., 3d6, 2d20, default: 1d6)'
+        example: 3d6
+      - name: modifier
+        default: '0'
+        in: query
+        schema:
+          type: number
+        required: false
+        description: 'Modifier to add to the total (can be negative, default: 0)'
+        example: '5'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  dice_notation: 3d6
+                  num_dice: 3
+                  num_sides: 6
+                  modifier: 5
+                  rolls:
+                  - 2
+                  - 6
+                  - 5
+                  total: 13
+                  total_with_modifier: 18
+                  min_roll: 2
+                  max_roll: 6
+                  average_roll: 4.33
+                  theoretical_min: 3
+                  theoretical_max: 18
+                  theoretical_average: 10.5
+                  expression: 3d6+5
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
