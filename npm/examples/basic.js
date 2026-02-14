@@ -15,8 +15,8 @@ const api = new dicerollerAPI({
 
 // Example query
 var query = {
-  dice: "3d6",
-  modifier: 5
+  dice: "1d6",
+  modifier: 0
 };
 
 // Make the API request using callback
