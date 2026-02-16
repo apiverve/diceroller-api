@@ -1,0 +1,16 @@
+name: apiverve_diceroller
+description: Dice Roller is a tool for rolling dice using standard RPG notation (XdY format). It supports multiple dice, various die sizes, modifiers, and provides statistics including min, max, average, and theoretical values for gaming and simulations.
+version: 1.1.14
+homepage: https://apiverve.com/marketplace/diceroller?utm_source=dart&utm_medium=homepage
+repository: https://github.com/apiverve/diceroller-api/tree/main/dart
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
