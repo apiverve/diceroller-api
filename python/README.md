@@ -44,7 +44,10 @@ from apiverve_diceroller.apiClient import DicerollerAPIClient
 # Initialize the client with your APIVerve API key
 api = DicerollerAPIClient("[YOUR_API_KEY]")
 
-query = { "dice": "1d6", "modifier": 5 }
+query = {
+    "dice": "1d6",
+    "modifier": 5
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "dice": "1d6", "modifier": 5 }
+query = {
+    "dice": "1d6",
+    "modifier": 5
+}
 ```
 
 ###### Simple Request
@@ -137,7 +143,10 @@ from apiverve_diceroller.apiClient import DicerollerAPIClient, DicerollerAPIClie
 
 api = DicerollerAPIClient("[YOUR_API_KEY]")
 
-query = { "dice": "1d6", "modifier": 5 }
+query = {
+    "dice": "1d6",
+    "modifier": 5
+}
 
 try:
     result = api.execute(query)
@@ -158,7 +167,10 @@ from apiverve_diceroller.apiClient import DicerollerAPIClient, DicerollerAPIClie
 
 api = DicerollerAPIClient("[YOUR_API_KEY]")
 
-query = { "dice": "1d6", "modifier": 5 }
+query = {
+    "dice": "1d6",
+    "modifier": 5
+}
 
 try:
     result = api.execute(query)
@@ -192,7 +204,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_diceroller.apiClient import DicerollerAPIClient, DicerollerAPIClientError
 
-query = { "dice": "1d6", "modifier": 5 }
+query = {
+    "dice": "1d6",
+    "modifier": 5
+}
 
 # Using context manager ensures proper cleanup
 with DicerollerAPIClient("[YOUR_API_KEY]") as api:
@@ -218,7 +233,10 @@ from apiverve_diceroller.apiClient import DicerollerAPIClient
 # Enable debug mode
 api = DicerollerAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "dice": "1d6", "modifier": 5 }
+query = {
+    "dice": "1d6",
+    "modifier": 5
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -233,8 +251,12 @@ from apiverve_diceroller.apiClient import DicerollerAPIClient
 
 api = DicerollerAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "dice": "1d6",
+    "modifier": 5
+}
+
 try:
-    query = { "dice": "1d6", "modifier": 5 }
     result = api.execute(query)
     print(result)
 finally:
