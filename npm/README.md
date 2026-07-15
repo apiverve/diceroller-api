@@ -130,15 +130,15 @@ async function makeRequest() {
     "num_sides": 6,
     "modifier": 5,
     "rolls": [
-      2,
       6,
-      5
+      4,
+      4
     ],
-    "total": 13,
-    "total_with_modifier": 18,
-    "min_roll": 2,
+    "total": 14,
+    "total_with_modifier": 19,
+    "min_roll": 4,
     "max_roll": 6,
-    "average_roll": 4.33,
+    "average_roll": 4.67,
     "theoretical_min": 3,
     "theoretical_max": 18,
     "theoretical_average": 10.5,
