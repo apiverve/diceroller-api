@@ -12,8 +12,13 @@ public class BasicExample {
         DiceRollerAPIClient client = new DiceRollerAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Execute the API request (no parameters required)
-            APIResponse response = client.execute(null);
+            // Query parameters
+            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
+        parameters.put(&quot;dice&quot;, &quot;3d6&quot;);
+        parameters.put(&quot;modifier&quot;, 5);
+
+            // Execute the API request
+            APIResponse response = client.execute(parameters);
 
             // Check if the request was successful
             if (response.isSuccess()) {
