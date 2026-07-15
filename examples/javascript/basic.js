@@ -13,7 +13,13 @@ const API_URL = 'https://api.apiverve.com/v1/diceroller';
  */
 async function callDiceRollerAPI() {
   try {
-    const response = await fetch(API_URL, {
+    // Query parameters
+    const params &#x3D; new URLSearchParams({
+            dice: &#x27;3d6&#x27;,
+            modifier: 5
+        });
+
+    const response = await fetch(`${API_URL}?${params}`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
