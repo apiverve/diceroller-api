@@ -4,29 +4,41 @@ declare module '@apiverve/diceroller' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface dicerollerResponse {
     status: string;
     error: string | null;
     data: DiceRollerData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface DiceRollerData {
-      diceNotation:       string;
-      numDice:            number;
-      numSides:           number;
-      modifier:           number;
-      rolls:              number[];
-      total:              number;
-      totalWithModifier:  number;
-      minRoll:            number;
-      maxRoll:            number;
-      averageRoll:        number;
-      theoreticalMin:     number;
-      theoreticalMax:     number;
-      theoreticalAverage: number;
-      expression:         string;
+      diceNotation:       null | string;
+      numDice:            number | null;
+      numSides:           number | null;
+      modifier:           number | null;
+      rolls:              (number | null)[];
+      total:              number | null;
+      totalWithModifier:  number | null;
+      minRoll:            number | null;
+      maxRoll:            number | null;
+      averageRoll:        number | null;
+      theoreticalMin:     number | null;
+      theoreticalMax:     number | null;
+      theoreticalAverage: number | null;
+      expression:         null | string;
   }
 
   export default class dicerollerWrapper {
