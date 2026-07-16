@@ -25,6 +25,9 @@ namespace APIVerve.API.DiceRoller
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,42 +36,54 @@ namespace APIVerve.API.DiceRoller
         public string DiceNotation { get; set; }
 
         [JsonProperty("num_dice")]
-        public long NumDice { get; set; }
+        public long? NumDice { get; set; }
 
         [JsonProperty("num_sides")]
-        public long NumSides { get; set; }
+        public long? NumSides { get; set; }
 
         [JsonProperty("modifier")]
-        public long Modifier { get; set; }
+        public long? Modifier { get; set; }
 
         [JsonProperty("rolls")]
-        public long[] Rolls { get; set; }
+        public long?[] Rolls { get; set; }
 
         [JsonProperty("total")]
-        public long Total { get; set; }
+        public long? Total { get; set; }
 
         [JsonProperty("total_with_modifier")]
-        public long TotalWithModifier { get; set; }
+        public long? TotalWithModifier { get; set; }
 
         [JsonProperty("min_roll")]
-        public long MinRoll { get; set; }
+        public long? MinRoll { get; set; }
 
         [JsonProperty("max_roll")]
-        public long MaxRoll { get; set; }
+        public long? MaxRoll { get; set; }
 
         [JsonProperty("average_roll")]
-        public double AverageRoll { get; set; }
+        public double? AverageRoll { get; set; }
 
         [JsonProperty("theoretical_min")]
-        public long TheoreticalMin { get; set; }
+        public long? TheoreticalMin { get; set; }
 
         [JsonProperty("theoretical_max")]
-        public long TheoreticalMax { get; set; }
+        public long? TheoreticalMax { get; set; }
 
         [JsonProperty("theoretical_average")]
-        public double TheoreticalAverage { get; set; }
+        public double? TheoreticalAverage { get; set; }
 
         [JsonProperty("expression")]
         public string Expression { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
