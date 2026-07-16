@@ -192,11 +192,45 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Dice Roller API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "dice_notation": "3d6",
+    "num_dice": 3,
+    "num_sides": 6,
+    "modifier": 5,
+    "rolls": [
+      6,
+      4,
+      4
+    ],
+    "total": 14,
+    "total_with_modifier": 19,
+    "min_roll": 4,
+    "max_roll": 6,
+    "average_roll": 4.67,
+    "theoretical_min": 3,
+    "theoretical_max": 18,
+    "theoretical_average": 10.5,
+    "expression": "3d6+5"
+  }
 }
 ```
 
