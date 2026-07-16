@@ -20,6 +20,6 @@ namespace APIVerve.API.DiceRoller
         /// Modifier to add to the total (can be negative)
         /// </summary>
         [JsonProperty("modifier")]
-        public string Modifier { get; set; }
+        public int? Modifier { get; set; }
     }
 }
