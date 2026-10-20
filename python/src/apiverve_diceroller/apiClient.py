@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -24,7 +24,7 @@ class ValidationError(DicerollerAPIClientError):
 class DicerollerAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "dice": {"type": "string", "required": False, "default": "1d6"},
+        "dice": {"type": "string", "required": False, "maxLength": 20, "default": "1d6"},
         "modifier": {"type": "integer", "required": False, "default": 0}
     }
 

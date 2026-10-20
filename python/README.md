@@ -1,13 +1,12 @@
 Dice Roller API
 ============
 
-Dice Roller is a tool for rolling dice using standard RPG notation (XdY format). It supports multiple dice, various die sizes, modifiers, and provides statistics including min, max, average, and theoretical values for gaming and simulations.
+Dice Roller is a dice API that simulates RPG dice rolls using standard notation like 3d6 or 2d20 with optional modifiers. It outputs the individual die outcomes, die count, and the sum of all rolls.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-diceroller.svg)](https://pypi.org/project/apiverve-diceroller/)
+
+This is a Python wrapper for the [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-diceroller
 
 ## Configuration
 
-Before using the diceroller API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Dice Roller API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -63,7 +62,7 @@ except Exception as e:
 
 ## Usage
 
-The Dice Roller API documentation is found here: [https://docs.apiverve.com/ref/diceroller](https://docs.apiverve.com/ref/diceroller?utm_source=pypi&utm_medium=readme).
+The Dice Roller API documentation is found here: [https://docs.apiverve.com/ref/diceroller](https://docs.apiverve.com/ref/diceroller?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -113,15 +112,15 @@ print(result)
     "num_sides": 6,
     "modifier": 5,
     "rolls": [
-      2,
       6,
-      5
+      4,
+      4
     ],
-    "total": 13,
-    "total_with_modifier": 18,
-    "min_roll": 2,
+    "total": 14,
+    "total_with_modifier": 19,
+    "min_roll": 4,
     "max_roll": 6,
-    "average_roll": 4.33,
+    "average_roll": 4.67,
     "theoretical_min": 3,
     "theoretical_max": 18,
     "theoretical_average": 10.5,
@@ -268,7 +267,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -279,12 +278,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
