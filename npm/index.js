@@ -30,7 +30,7 @@ class dicerollerWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/diceroller';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"dice":{"type":"string","required":false,"default":"1d6"},"modifier":{"type":"integer","required":false,"default":0}};
+        this.validationRules = {"dice":{"type":"string","required":false,"maxLength":20,"default":"1d6"},"modifier":{"type":"integer","required":false,"default":0}};
     }
 
     /**

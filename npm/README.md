@@ -1,13 +1,10 @@
 # Dice Roller API
 
-Dice Roller is a tool for rolling dice using standard RPG notation (XdY format). It supports multiple dice, various die sizes, modifiers, and provides statistics including min, max, average, and theoretical values for gaming and simulations.
+Dice Roller is a dice API that simulates RPG dice rolls using standard notation like 3d6 or 2d20 with optional modifiers. It outputs the individual die outcomes, die count, and the sum of all rolls.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/diceroller.svg)](https://www.npmjs.com/package/@apiverve/diceroller)
 
-This is a Javascript Wrapper for the [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source=npm&utm_medium=readme)
+This is a JavaScript wrapper for the [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -28,15 +25,15 @@ yarn add @apiverve/diceroller
 ## Configuration
 
 Before using the Dice Roller API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=readme)
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Quick Start
 
-[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=readme)
+[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=referral&utm_content=readme)
 
-The Dice Roller API documentation is found here: [https://docs.apiverve.com/ref/diceroller](https://docs.apiverve.com/ref/diceroller?utm_source=npm&utm_medium=readme).
+The Dice Roller API documentation is found here: [https://docs.apiverve.com/ref/diceroller](https://docs.apiverve.com/ref/diceroller?utm_source=npm&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -151,7 +148,7 @@ async function makeRequest() {
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -163,12 +160,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=readme), [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=readme), and [Refund Policy](https://apiverve.com/refund?utm_source=npm&utm_medium=readme).
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=referral&utm_content=readme) and [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
