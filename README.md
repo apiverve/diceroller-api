@@ -1,13 +1,13 @@
-# [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Dice Roller is a tool for rolling dice using standard RPG notation (XdY format). It supports multiple dice, various die sizes, modifiers, and provides statistics including min, max, average, and theoretical values for gaming and simulations.
+Dice Roller is a dice API that simulates RPG dice rolls using standard notation like 3d6 or 2d20 with optional modifiers. It outputs the individual die outcomes, die count, and the sum of all rolls.
 
 The Dice Roller API provides a simple, reliable way to integrate dice roller functionality into your applications. Built for developers who need production-ready dice roller capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -162,7 +162,7 @@ go get github.com/apiverve/diceroller-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/diceroller](https://docs.apiverve.com/ref/diceroller)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -238,7 +238,7 @@ A real response from the Dice Roller API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
