@@ -1,7 +1,7 @@
 {
     "name": "apiverve/diceroller",
-    "description": "Dice Roller is a tool for rolling dice using standard RPG notation (XdY format). It supports multiple dice, various die sizes, modifiers, and provides statistics including min, max, average, and theoretical values for gaming and simulations.",
-    "version": "1.2.0",
+    "description": "Dice Roller is a dice API that simulates RPG dice rolls using standard notation like 3d6 or 2d20 with optional modifiers. It outputs the individual die outcomes, die count, and the sum of all rolls.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "diceroller",
-        "dice roller",
-        "roll dice",
-        "d20",
-        "d6",
-        "rpg dice"
+        "dice api",
+        "roll dice api",
+        "dice roller api",
+        "dice roller simulator api",
+        "dice roller"
     ],
-    "homepage": "https://apiverve.com/marketplace/diceroller?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/diceroller?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/diceroller",
