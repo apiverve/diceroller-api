@@ -1,6 +1,6 @@
 # Dice Roller API - PHP Package
 
-Dice Roller is a tool for rolling dice using standard RPG notation (XdY format). It supports multiple dice, various die sizes, modifiers, and provides statistics including min, max, average, and theoretical values for gaming and simulations.
+Dice Roller is a dice API that simulates RPG dice rolls using standard notation like 3d6 or 2d20 with optional modifiers. It outputs the individual die outcomes, die count, and the sum of all rolls.
 
 ## Installation
 
@@ -101,11 +101,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/diceroller?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/diceroller?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/diceroller?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/diceroller?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/diceroller?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/diceroller?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

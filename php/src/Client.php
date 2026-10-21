@@ -19,7 +19,7 @@ use APIVerve\Diceroller\Exceptions\ValidationException;
  * print_r($response);
  * ```
  *
- * @see https://apiverve.com/marketplace/diceroller?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/diceroller?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -34,7 +34,7 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'dice' => ['type' => 'string', 'required' => false],
+        'dice' => ['type' => 'string', 'required' => false, 'maxLength' => 20],
         'modifier' => ['type' => 'integer', 'required' => false]
     ];
 
