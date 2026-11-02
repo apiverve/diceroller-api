@@ -46,10 +46,10 @@ final _formatPatterns = {
 
 /// Dice Roller API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/diceroller?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/diceroller?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [dice] - Dice notation in XdY format (e.g., 3d6, 2d20, default: 1d6)
+/// * [dice] - Dice notation in XdY format (e.g., 3d6, 2d20, default: 1d6) [maxLength: 20]
 /// * [modifier] - Modifier to add to the total (can be negative)
 class DicerollerClient {
   final String apiKey;
@@ -58,7 +58,7 @@ class DicerollerClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'dice': ValidationRule(type: 'string', required: false),
+    'dice': ValidationRule(type: 'string', required: false, maxLength: 20),
     'modifier': ValidationRule(type: 'integer', required: false),
   };
 

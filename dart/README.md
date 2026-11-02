@@ -1,11 +1,11 @@
 # Dice Roller API - Dart/Flutter Client
 
-Dice Roller is a tool for rolling dice using standard RPG notation (XdY format). It supports multiple dice, various die sizes, modifiers, and provides statistics including min, max, average, and theoretical values for gaming and simulations.
+Dice Roller is a dice API that simulates RPG dice rolls using standard notation like 3d6 or 2d20 with optional modifiers. It outputs the individual die outcomes, die count, and the sum of all rolls.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_diceroller.svg)](https://pub.dev/packages/apiverve_diceroller)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_diceroller: ^1.1.14
+  apiverve_diceroller: ^1.2.4
 ```
 
 Then run:
@@ -58,15 +58,15 @@ void main() async {
     "num_sides": 6,
     "modifier": 5,
     "rolls": [
-      2,
       6,
-      5
+      4,
+      4
     ],
-    "total": 13,
-    "total_with_modifier": 18,
-    "min_roll": 2,
+    "total": 14,
+    "total_with_modifier": 19,
+    "min_roll": 4,
     "max_roll": 6,
-    "average_roll": 4.33,
+    "average_roll": 4.67,
     "theoretical_min": 3,
     "theoretical_max": 18,
     "theoretical_average": 10.5,
@@ -77,12 +77,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/diceroller](https://docs.apiverve.com/ref/diceroller?utm_source=dart&utm_medium=readme)
+- **API Home:** [Dice Roller API](https://apiverve.com/marketplace/diceroller?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/diceroller](https://docs.apiverve.com/ref/diceroller?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -90,4 +90,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
