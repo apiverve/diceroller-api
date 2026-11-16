@@ -19,7 +19,7 @@ module APIVerve
       DEFAULT_TIMEOUT = 30
 
       # Validation rules for parameters
-      VALIDATION_RULES = { 'dice' => { type: 'string', required: false, max_length: 20 }, 'modifier' => { type: 'integer', required: false } }
+      VALIDATION_RULES = { 'dice' => { type: 'string', required: false, max_length: 20 }, 'modifier' => { type: 'integer', required: false, min: -10000, max: 10000 } }
 
       # Format validation patterns
       FORMAT_PATTERNS = {
