@@ -68,7 +68,7 @@ namespace APIVerve.API.DiceRoller
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
             { "dice", new ValidationRule { Type = "string", Required = false, MaxLength = 20 } },
-            { "modifier", new ValidationRule { Type = "integer", Required = false } }
+            { "modifier", new ValidationRule { Type = "integer", Required = false, Min = -10000, Max = 10000 } }
         };
 
         /// <summary>Format validation patterns</summary>
