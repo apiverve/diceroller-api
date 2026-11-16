@@ -28,14 +28,16 @@ paths:
           schema:
             type: string
           required: false
-          description: 'Dice notation in XdY format (e.g., 3d6, 2d20, default: 1d6)'
+          description: >-
+            Dice notation in XdY format (e.g., 3d6, 2d20, default: 1d6); d20
+            means one die and an inline modifier like 3d6+5 is added to modifier
           example: 3d6
         - name: modifier
           in: query
           schema:
             type: integer
           required: false
-          description: Modifier to add to the total (can be negative)
+          description: Modifier to add to the total (can be negative, -10000 to 10000)
           example: 5
       responses:
         '200':
