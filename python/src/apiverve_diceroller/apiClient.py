@@ -25,7 +25,7 @@ class DicerollerAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
         "dice": {"type": "string", "required": False, "maxLength": 20, "default": "1d6"},
-        "modifier": {"type": "integer", "required": False, "default": 0}
+        "modifier": {"type": "integer", "required": False, "min": -10000, "max": 10000, "default": 0}
     }
 
     # Format validation patterns
