@@ -35,7 +35,7 @@ class Client
      */
     private const VALIDATION_RULES = [
         'dice' => ['type' => 'string', 'required' => false, 'maxLength' => 20],
-        'modifier' => ['type' => 'integer', 'required' => false]
+        'modifier' => ['type' => 'integer', 'required' => false, 'min' => -10000, 'max' => 10000]
     ];
 
     /**
